@@ -90,9 +90,9 @@ const fetchGeneralNews = async () => {
   }
   displayNews();
 };
-console.log(HEADLINES_NEWS)
+//console.log(HEADLINES_NEWS)
 const fetchBusinessNews = async () => {
-  //const response = await fetch(BUSINESS_NEWS + API_KEY);
+  const response = await fetch(BUSINESS_NEWS + API_KEY);
   newsDataArr = [];
   if (response.status >= 200 && response.status < 300) {
     const myJson = await response.json();
